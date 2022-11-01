@@ -1,4 +1,4 @@
-# TarihteBugun
+# Tarihte Bugün
 Tarihte Bugün Mobile App
 
 Jetpack Compose ve Kotlin ile geliştirdiğim Tarihte Bugün uygulaması
