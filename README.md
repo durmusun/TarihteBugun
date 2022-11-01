@@ -11,6 +11,8 @@ Uygulamayı geliştirirken kullanılan yapılar;
 
 - Jetpack Compose
 
+- Clean Architecture
+
 - MVVM
 
 - Flow
