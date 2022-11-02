@@ -27,6 +27,8 @@ Uygulamayı geliştirirken kullanılan yapılar;
 
 - Coroutine
 
+- Use Case
+
 - Accompanist
 
 - Material Design 2
