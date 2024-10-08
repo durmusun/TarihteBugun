@@ -26,6 +26,13 @@ fun Header() {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Image(
+            modifier = Modifier.width(270.dp),
+            imageVector = ImageVector.vectorResource(
+                id = R.drawable.ic_people_1
+            ),
+            contentDescription = "man_01",
+        )
         Card(
             modifier = Modifier.offset(y = -5.dp),
             cardTitle = date.toString(),
