@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'kotlin-kapt'
+    id 'org.jetbrains.kotlin.plugin.compose'
+    id 'com.google.devtools.ksp'
     id 'dagger.hilt.android.plugin'
 }
 
@@ -11,9 +12,9 @@ android {
     defaultConfig {
         applicationId "com.appkolik.tarihtebugun"
         minSdk 23
-        targetSdk 34
-        versionCode 5
-        versionName "1.1"
+        targetSdk 35
+        versionCode 6
+        versionName "1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
@@ -35,9 +36,7 @@ android {
     }
     buildFeatures {
         compose true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion compose_version
+        buildConfig true
     }
     packagingOptions {
         resources {
@@ -93,9 +92,9 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"
 
     // Dagger - Hilt
-    implementation "com.google.dagger:dagger-android-support:2.42"
-    implementation "com.google.dagger:hilt-android:2.42"
-    kapt "com.google.dagger:hilt-android-compiler:2.42"
+    implementation "com.google.dagger:dagger-android-support:2.48"
+    implementation "com.google.dagger:hilt-android:2.48"
+    ksp "com.google.dagger:hilt-android-compiler:2.48"
 
     //hiltViewModel
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
